@@ -12,7 +12,9 @@
 <body>
   <header>
     <h2>Lenger Longer</h2>
+      <% if current_user %>
       <h1>Hi <%= current_user.first_name %>! </h1>
+      <% end %>
   </header>
   <nav>
     <li><%= link_to "Home", root_path %></li>
@@ -20,10 +22,8 @@
       <li><%= link_to "Logout", logout_path %></li>
     <% else %>
       <li><%= link_to "Register", users_new_path %></li>
-      <li><%= link_to "Login", login_path %></li>
-      
+      <li><%= link_to "Login", login_path %></li>  
     <% end %>
-
   </nav>
 
 <%= yield %>

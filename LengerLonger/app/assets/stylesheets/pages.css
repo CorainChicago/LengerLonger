@@ -85,19 +85,21 @@ footer{
 }
 
 .twitter{
-    top: 500px;
-    border: 3px solid grey;
-    position: absolute;
-    float: left;
-    margin-bottom: 5.0em;
+    border: 3px ridge grey;
+    position: relative;
+    float: right;
+    clear: both;
+    margin: 25% 5% 5% 5%;
 }
 
 footer{
-  position: absolute;
+  position: relative;
+  float: right;
+  clear: both
+
   text-align: center;
   border: 3px solid grey;
   width: 100%;
   height: auto;
-  position: fixed;
-  bottom: -1px;
+  bottom: 5%;
 }
