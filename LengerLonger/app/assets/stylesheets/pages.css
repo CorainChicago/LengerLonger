@@ -3,21 +3,50 @@ body{
     position: relative;
 }
 
-/*nav{
+header{
+  float: left;
+  margin-left: 30%;
+  padding: 2% 5% 2% 5%;
+  background-color: lightblue;
+  border-radius: 20% 20%;
+
+}
+header h2{
+  text-align: center;
+  font-size: 3.0em; 
+
+}
+header h1{
+  text-align: center;
+  font-size: 2.0em;
+}
+
+nav{
     float: right;
-    width: 25%;
-    top: 1.5%;
+    width: 8.0em;
     height: auto;
-    border: 0.3em solid grey;
-    border-radius: 20%;
-    padding: 2%;
+    height: auto;
+    border: 0.2em solid grey;
+    border-radius: 60% 60% 60%;
+    margin: 3% 7% 3% 3%;
+    padding: 3%;
     list-style: none;
+
+
 }
 nav li{
     display: inline;
     margin-right: 4%;
     margin-left: 4%;
 }
+nav a:link {
+    text-decoration: none;
+}
+
+nav a:hover {
+    background-color: lightgreen; 
+}
+
 
 .center-box{
     position: relative;
@@ -28,28 +57,29 @@ nav li{
 }
 
 .twitter{
-    top: 500px;
+    float: left;
     border: 3px solid grey;
     position: absolute;
     margin-bottom: 5.0em;
 }
 
 .quotes{
+  text-align: right;
+  width: 25%;
   float: right;
-  margin-top: 20%;
-  clear: left;
-  position:relative;
+  clear: both;
+  margin: 0% 3% 3% 3%;
+
 }
 
 footer{
-    background-color: white;
+  background-color: white;
   position: absolute;
   text-align: center;
   border: 3px solid grey;
   width: 100%;
   height: auto;
-  position: fixed;
-  bottom: -1px;
+  position: absolute;
 }
 
 .twitter{
@@ -68,4 +98,4 @@ footer{
   height: auto;
   position: fixed;
   bottom: -1px;
-}*/
+}

@@ -10,16 +10,17 @@
   <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 </head>
 <body>
-
+  <header>
+    <h2>Lenger Longer</h2>
+      <h1>Hi <%= current_user.first_name %>! </h1>
+  </header>
   <nav>
     <li><%= link_to "Home", root_path %></li>
     <% if logged_in? %>
       <li><%= link_to "Logout", logout_path %></li>
-      <li>Hi <%= current_user.first_name %>! </li>
     <% else %>
       <li><%= link_to "Register", users_new_path %></li>
       <li><%= link_to "Login", login_path %></li>
-      
       
     <% end %>
 
