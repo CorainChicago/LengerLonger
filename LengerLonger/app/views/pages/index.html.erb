@@ -1,8 +1,13 @@
-<nav>
-    <li><%= link_to "Home", root_path %></li>
-    <li><%= link_to "Register", users_new_path %></li>
-  </nav>
-
-<div class="center-box"> 
-  <h2>Hi </h2>
+<div class="quotes">
+  <blockquote id="qod-quote"></blockquote>
 </div>
+
+
+
+<div class="twitter">
+  <a class="twitter-timeline" href="https://twitter.com/AnneWHilborn" data-widget-id="665713554226585600">Tweets by @AnneWHilborn</a>
+</div>
+<div class="center-box"> 
+  <h2><%= @response[1..400] %></h2>
+</div>
+

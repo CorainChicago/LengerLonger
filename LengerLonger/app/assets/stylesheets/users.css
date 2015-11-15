@@ -1,0 +1,20 @@
+/*.new_user{
+  width: 15%;
+  height: 10%;
+  padding: 20px;
+
+  position: absolute;
+  top: 30%;
+  left: 50%;
+
+  margin: -70px 0 0 -170px;
+}
+
+.new_user label{
+  display: block;
+  margin: auto;
+}
+.new_user input{
+  display: block;
+  margin-right: auto;
+}*/

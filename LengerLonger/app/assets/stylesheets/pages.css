@@ -1,0 +1,71 @@
+body{
+    font-family: Helvetica;
+    position: relative;
+}
+
+/*nav{
+    float: right;
+    width: 25%;
+    top: 1.5%;
+    height: auto;
+    border: 0.3em solid grey;
+    border-radius: 20%;
+    padding: 2%;
+    list-style: none;
+}
+nav li{
+    display: inline;
+    margin-right: 4%;
+    margin-left: 4%;
+}
+
+.center-box{
+    position: relative;
+    float: left;
+    margin:15%; 
+    width: 500px;
+    height: auto;
+}
+
+.twitter{
+    top: 500px;
+    border: 3px solid grey;
+    position: absolute;
+    margin-bottom: 5.0em;
+}
+
+.quotes{
+  float: right;
+  margin-top: 20%;
+  clear: left;
+  position:relative;
+}
+
+footer{
+    background-color: white;
+  position: absolute;
+  text-align: center;
+  border: 3px solid grey;
+  width: 100%;
+  height: auto;
+  position: fixed;
+  bottom: -1px;
+}
+
+.twitter{
+    top: 500px;
+    border: 3px solid grey;
+    position: absolute;
+    float: left;
+    margin-bottom: 5.0em;
+}
+
+footer{
+  position: absolute;
+  text-align: center;
+  border: 3px solid grey;
+  width: 100%;
+  height: auto;
+  position: fixed;
+  bottom: -1px;
+}*/

@@ -1,0 +1,9 @@
+<div class"login_user">
+  <%= form_for @user, url: login_path do |f| %>
+    <%= f.label :email %>
+    <%= f.text_area :email %>
+    <%= f.label :password %>
+    <%= f.text_area :password %>
+    <%= f.submit "Login" %>
+  <% end %>
+</div>

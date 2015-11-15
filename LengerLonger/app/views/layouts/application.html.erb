@@ -5,10 +5,27 @@
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
+
+  <script src="http://quotesondesign.com/api/3.0/api-3.0.js" type="text/javascript" charset="utf-8"></script>
+  <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 </head>
 <body>
 
+  <nav>
+    <li><%= link_to "Home", root_path %></li>
+    <% if logged_in? %>
+      <li><%= link_to "Register", users_new_path %></li>
+      <li><%= link_to "Login", login_path %></li>
+    <% else %>
+      <li><%= link_to "Profile", profile_path %></li>
+      <li><%= link_to "Logout", logout_path %></li>
+      
+    <% end %>
+
+  </nav>
+
 <%= yield %>
+
 <footer>
   <p>Built by <%= link_to "CorainChicago", "http://corainchicago.github.io/" %></p>
 </footer>
