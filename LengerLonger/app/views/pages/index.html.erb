@@ -8,6 +8,10 @@
   <a class="twitter-timeline" href="https://twitter.com/AnneWHilborn" data-widget-id="665713554226585600">Tweets by @AnneWHilborn</a>
 </div>
 <div class="center-box"> 
-  <h2><%= @response[1..400] %></h2>
+  <h2><%= @weather["currently"]["summary"] %></h2>
+  <h2><%= @weather["currently"]["temperature"].to_i  %></h2>
+  <h2><%= @weather["daily"]["temperature"].to_i  %></h2>
+  <h2><%= @weather["daily"]["summary"] %></h2>
+ 
 </div>
 
