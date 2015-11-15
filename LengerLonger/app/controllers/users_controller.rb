@@ -7,7 +7,11 @@ class UsersController < ApplicationController
   def create
     @user = User.create(user_params)
     if @user.save
+      session[:user_id] = @user.id
       redirect_to root_path
+    else
+      flash[:notice] = "Something when wrong, please try again"
+      render :new
     end 
   end
 
