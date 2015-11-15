@@ -49,9 +49,11 @@ nav a:hover {
 
 
 .center-box{
-    position: relative;
-    float: left;
-    margin:15%; 
+    border: 10px ridge lightgrey;
+    position: absolute;
+    float: right;
+    margin: 20% 0% 0% 30%; 
+    padding: 2% 3% 3% 3%;
     width: 500px;
     height: auto;
 }
