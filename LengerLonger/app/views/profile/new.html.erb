@@ -1,0 +1,15 @@
+<h2>profile.new</h2>
+
+<div class"new_user">
+  <%= form_for @profile, url: user_profile_index_path do |f| %>
+    <%= f.label :city %>
+    <%= f.text_area :city %>
+    <%= f.label :fav_quote %>
+    <%= f.text_area :fav_quote %>
+    <%= f.label :goal %>
+    <%= f.text_area :goal%>
+    <%= f.submit "Register" %>
+  <% end %>
+</div>
+
+

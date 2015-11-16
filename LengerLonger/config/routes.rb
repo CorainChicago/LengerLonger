@@ -14,7 +14,7 @@ Rails.application.routes.draw do
   get '/logout' => 'sessions#destroy'
   
  resources :users do 
-  resources :profiles
+  resources :profile
  end
 
 
