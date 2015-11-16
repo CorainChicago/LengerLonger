@@ -47,6 +47,13 @@ nav a:hover {
     background-color: lightgreen; 
 }
 
+.weather{
+  font-size: 1.2em;
+  border: 2px solid grey;
+  width: 20%;
+  height: 15%;
+  margin: 5% 0% 0% 5%;
+}
 
 .center-box{
     border: 10px ridge lightgrey;
@@ -54,7 +61,7 @@ nav a:hover {
     float: right;
     margin: 20% 0% 0% 30%; 
     padding: 2% 3% 3% 3%;
-    width: 500px;
+    width: auto;
     height: auto;
 }
 

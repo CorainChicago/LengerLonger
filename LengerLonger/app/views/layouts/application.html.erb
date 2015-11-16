@@ -11,7 +11,7 @@
 </head>
 <body>
   <header>
-    <h2>Lenger Longer</h2>
+    <h2>Daily Starter</h2>
       <% if current_user %>
       <h1>Hi <%= current_user.first_name %>! </h1>
       <% end %>
@@ -19,8 +19,8 @@
   <nav>
     <li><%= link_to "Home", root_path %></li>
     <% if logged_in? %>
-      <% if current_user.profile_id %>
-        <li><%= link_to "Profile", user_profile_path(current_user) %></li>
+      <% if current_user.profile.present?%>
+        <li><%= link_to "Profile", user_profile_path(user_profile.id, current_user.id) %></li>
       <% else %>
        <li><%= link_to "Create Profile",  new_user_profile_path(current_user) %></li>
       <% end %>

@@ -8,4 +8,4 @@
 
 @user = User.create(first_name: "Charlie", last_name: "Hays", email: "cat@cat.com", password: "1234")
 
-@user.build_profile(city: "Chicago", fav_quote: "Meow", goal: "Alex's love")
+@profile = Profile.create(city: "Chicago", fav_quote: "Meow", goal: "Alex's love", user_id: @user.id)

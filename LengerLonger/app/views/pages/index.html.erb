@@ -1,12 +1,19 @@
+<div class="center-box">
+  <% @response = Joke.joke %>
+  <%= @response["title"]%>
+  <img src="<%= @response["img"]%>">
+</div>
+
+
 <div class="quotes">
   <blockquote id="qod-quote"></blockquote>
 </div>
 
-<div class="center-box"> 
-  <h2>Today's weather is: <%= @weather["currently"]["summary"] %></h2>
-  <h2>temperature: <%= @weather["currently"]["temperature"].to_i  %></h2>
-  <h2>Today's daily weather is: <%= @weather["daily"]["temperature"].to_i  %></h2>
-  <h2>Today's daily summary is: <%= @weather["daily"]["summary"] %></h2>
+<div class="weather"> 
+  <p>Today's weather is:  <%= @weather["currently"]["summary"] %></p>
+  <p>Current Temperature: <%= @weather["currently"]["temperature"].to_i  %></p>
+  <p>Precipiation Chance: <%= @weather["daily"]["precipProbability"].to_i %>%   Humidity: <%= @weather["daily"]["Humidity"].to_i %>%</p>
+  <p>Summary: <%= @weather["daily"]["summary"] %></p>
 </div>
 
 <div class="twitter-box">

@@ -7,4 +7,8 @@ module ApplicationHelper
   def logged_in?
     session[:user_id] != nil
   end
+
+  def user_profile
+    @profile =  Profile.find_by(user_id: current_user.id)
+  end
 end

@@ -6,18 +6,22 @@ class ProfileController < ApplicationController
   end
 
   def create
-    current_user.
+    @profile = Profile.new(profile_params)
+    @profile.user_id = current_user.id
+    @profile.save
+    redirect_to root_path 
   end
 
-
-  def edit
-   @profile = Profile.find_by(user_id: session[:user_id])
-   @attributes = Profile.attribute_names - %w(id user_id created_at updated_at)
+  def show
+    
   end
 
   private
-
   def find_user
     @user =  User.find(session[:user_id])
   end
+  def profile_params
+    params.require(:profile).permit(:city, :fav_quote, :goal)
+  end
+
 end
