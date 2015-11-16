@@ -1,6 +1,11 @@
+<div class="fact_circle">
+  <p><%= @fact %></p>
+</div>
+
+
 <div class="center-box">
-  <% @response = Joke.joke %>
-  <%= @response["title"]%>
+  <% @response = Cartoon.joke %>
+  <p><%= @response["title"] %></p>
   <img src="<%= @response["img"]%>">
 </div>
 

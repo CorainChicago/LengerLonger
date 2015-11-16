@@ -26,7 +26,7 @@ nav{
     width: 13.0em;
     height: auto;
     height: auto;
-    border: 0.2em solid grey;
+    border: 0.8em ridge #94DBCF;
     border-radius: 60% 60% 60%;
     margin: 3% 7% 3% 3%;
     padding: 3%;
@@ -49,20 +49,40 @@ nav a:hover {
 
 .weather{
   font-size: 1.2em;
-  border: 2px solid grey;
   width: 20%;
   height: 15%;
   margin: 5% 0% 0% 5%;
 }
 
 .center-box{
-    border: 10px ridge lightgrey;
+    border: 10px ridge #CEBAE8;
     position: absolute;
     float: right;
     margin: 20% 0% 0% 30%; 
     padding: 2% 3% 3% 3%;
     width: auto;
     height: auto;
+}
+
+p .center-box{
+  font-size= 1.8em;
+  display: block;
+}
+
+.fact_circle{
+  border: 5px double #CCE7B6;
+  border-radius: 60%;
+  height: 15%;
+  width: 10%;
+  padding: 2%;
+  position: absolute; 
+  left: 10%;
+
+}
+
+p .fact_circle{
+  position: relative; 
+  left: -0%; 
 }
 
 .twitter{
