@@ -2,8 +2,6 @@
   <blockquote id="qod-quote"></blockquote>
 </div>
 
-
-
 <div class="center-box"> 
   <h2>Today's weather is: <%= @weather["currently"]["summary"] %></h2>
   <h2>temperature: <%= @weather["currently"]["temperature"].to_i  %></h2>
@@ -11,6 +9,13 @@
   <h2>Today's daily summary is: <%= @weather["daily"]["summary"] %></h2>
 </div>
 
-<div class="twitter">
-  <a class="twitter-timeline" href="https://twitter.com/AnneWHilborn" data-widget-id="665713554226585600">Tweets by @AnneWHilborn</a>
+<div class="twitter-box">
+  <div class="twitter">
+    <p><a class="twitter-timeline" href="https://twitter.com/AnneWHilborn" data-widget-id="665713554226585600">Tweets by @AnneWHilborn</a><p>
+  </div>
+  <div class="twitter">
+    <p><a class="twitter-timeline" href="https://twitter.com/HistoricalPics" data-widget-id="666040962842501120">Tweets by @HistoricalPics</a><p>
+  </div>
 </div>
+
+
