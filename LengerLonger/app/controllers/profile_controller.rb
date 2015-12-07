@@ -16,6 +16,10 @@ class ProfileController < ApplicationController
     
   end
 
+  def edit
+    @profile = Profile.find_by(user_id: params[:user_id])
+  end
+
   private
   def find_user
     @user =  User.find(session[:user_id])

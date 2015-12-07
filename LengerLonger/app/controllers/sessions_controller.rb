@@ -10,7 +10,7 @@ class SessionsController < ApplicationController
       session[:user_id] = current_user.id
       redirect_to root_path
     else
-      redirect_to users_new_path
+      redirect_to new_user_path
     end  
   end
 
