@@ -1,0 +1,123 @@
+body{
+    font-family: Helvetica;
+    position: relative;
+}
+
+header{
+  float: left;
+  margin-left: 35%;
+  padding: 2% 5% 2% 5%;
+  background-color: lightblue;
+  border-radius: 20% 20%;
+
+}
+header h2{
+  text-align: center;
+  font-size: 3.0em; 
+
+}
+header h1{
+  text-align: center;
+  font-size: 2.0em;
+}
+
+nav{
+    float: right;
+    width: 13.0em;
+    height: auto;
+    height: auto;
+    border: 0.8em ridge #94DBCF;
+    border-radius: 60% 60% 60%;
+    margin: 3% 7% 3% 3%;
+    padding: 3%;
+    list-style: none;
+
+
+}
+nav li{
+    display: inline;
+    margin-right: 4%;
+    margin-left: 4%;
+}
+nav a:link {
+    text-decoration: none;
+}
+
+nav a:hover {
+    background-color: lightgreen; 
+}
+
+.weather{
+  font-size: 1.2em;
+  width: 20%;
+  height: 15%;
+  margin: 10% 0% 0% 5%;
+}
+
+.center-box{
+    border: 10px ridge #CEBAE8;
+    position: absolute;
+    float: right;
+    margin: 20% 0% 0% 30%; 
+    padding: 2% 3% 3% 3%;
+    width: auto;
+    height: auto;
+}
+
+p .center-box{
+  font-size= 1.8em;
+  display: block;
+}
+
+.fact_circle{
+  border: 5px double #CCE7B6;
+  border-radius: 60%;
+  height: 20%;
+  width: 15%;
+  padding: 2.5%;
+  position: absolute; 
+  left: 8%;
+  top: -12%;
+
+}
+
+p .fact_circle{
+  position: relative; 
+  left: -0%; 
+}
+
+.user_profile_info{
+    float: right;
+    border: 6px groove grey;
+    position: absolute;
+    margin-left: 1500px;
+    margin-top: 8%;
+    padding: 3%; 
+    margin-bottom: 5.0em;
+}
+
+.quotes{
+  text-align: right;
+  width: 25%;
+  float: right;
+  clear: both;
+  margin: 0% 3% 8% 3%;
+
+}
+
+.twitter{
+    border: 3px ridge grey;
+    position: relative;
+    float: left;
+    clear: both;
+    margin: 25% 5% 5% 5%;
+}
+
+footer{
+  position: fixed;
+  bottom: 0px;
+  text-align: center;
+  border: 0.5em ridge grey;
+  width: 105%;
+  height: auto;
+}

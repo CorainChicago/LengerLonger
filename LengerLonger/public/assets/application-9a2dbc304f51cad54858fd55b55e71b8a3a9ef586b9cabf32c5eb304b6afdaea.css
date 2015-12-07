@@ -1,0 +1,165 @@
+body{
+    font-family: Helvetica;
+    position: relative;
+}
+
+header{
+  float: left;
+  margin-left: 30%;
+  padding: 2% 5% 2% 5%;
+  background-color: lightblue;
+  border-radius: 20% 20%;
+
+}
+header h2{
+  text-align: center;
+  font-size: 3.0em; 
+
+}
+header h1{
+  text-align: center;
+  font-size: 2.0em;
+}
+
+nav{
+    float: right;
+    width: 13.0em;
+    height: auto;
+    height: auto;
+    border: 0.8em ridge #94DBCF;
+    border-radius: 60% 60% 60%;
+    margin: 3% 7% 3% 3%;
+    padding: 3%;
+    list-style: none;
+
+
+}
+nav li{
+    display: inline;
+    margin-right: 4%;
+    margin-left: 4%;
+}
+nav a:link {
+    text-decoration: none;
+}
+
+nav a:hover {
+    background-color: lightgreen; 
+}
+
+.weather{
+  font-size: 1.2em;
+  width: 20%;
+  height: 15%;
+  margin: 5% 0% 0% 5%;
+}
+
+.center-box{
+    border: 10px ridge #CEBAE8;
+    position: absolute;
+    float: right;
+    margin: 20% 0% 0% 30%; 
+    padding: 2% 3% 3% 3%;
+    width: auto;
+    height: auto;
+}
+
+p .center-box{
+  font-size= 1.8em;
+  display: block;
+}
+
+.fact_circle{
+  border: 5px double #CCE7B6;
+  border-radius: 60%;
+  height: 15%;
+  width: 10%;
+  padding: 2%;
+  position: absolute; 
+  left: 10%;
+
+}
+
+p .fact_circle{
+  position: relative; 
+  left: -0%; 
+}
+
+.twitter{
+    float: left;
+    border: 3px solid grey;
+    position: absolute;
+    margin-bottom: 5.0em;
+}
+
+.quotes{
+  text-align: right;
+  width: 25%;
+  float: right;
+  clear: both;
+  margin: 0% 3% 3% 3%;
+
+}
+
+footer{
+  background-color: white;
+  position: absolute;
+  text-align: center;
+  border: 3px solid grey;
+  width: 100%;
+  height: auto;
+  position: absolute;
+}
+
+.twitter{
+    border: 3px ridge grey;
+    position: relative;
+    float: right;
+    clear: both;
+    margin: 25% 5% 5% 5%;
+}
+
+footer{
+  position: relative;
+  float: right;
+  clear: both
+
+  text-align: center;
+  border: 3px solid grey;
+  width: 100%;
+  height: auto;
+  bottom: 5%;
+}
+.new_user{
+  position: relative;
+  margin: 10% 55% 30% 30%;
+  float: right;
+  clear: both;
+  margin-bottom: 30%;
+}
+
+.new_user label{
+  display: block;
+  margin: 2% 15% 5% 2%;
+}
+.new_user input{
+  line-height: 3.0em;
+  display: block;
+  margin: 14% 5% 10% 2%;
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+
+
+ */
+

@@ -1,0 +1,13 @@
+<div class"new_user">
+  <%= form_for @user do |f| %>
+    <%= f.label :first_name %>
+    <%= f.text_area :first_name %>
+    <%= f.label :last_name %>
+    <%= f.text_area :last_name %>
+    <%= f.label :email %>
+    <%= f.text_area :email %>
+    <%= f.label :password %>
+    <%= f.text_area :password %>
+    <%= f.submit "Register" %>
+  <% end %>
+</div>

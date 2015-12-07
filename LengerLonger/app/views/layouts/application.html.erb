@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>LengerLonger</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+
+  <link rel="stylesheet" src="//normalize-css.googlecode.com/svn/trunk/normalize.css" />
+  <script src="http://quotesondesign.com/api/3.0/api-3.0.js" type="text/javascript" charset="utf-8"></script>
+  <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+</head>
+<body>
+  <header>
+    <h2>Daily Starter</h2>
+      <% if current_user %>
+      <h1>Hi <%= current_user.first_name %>! </h1>
+      <% end %>
+  </header>
+  <nav>
+    <li><%= link_to "Home", root_path %></li>
+    <% if logged_in? %>
+      <% if current_user.profile.present?%>
+        <li><%= link_to "Profile", user_profile_path(user_profile.id, current_user.id) %></li>
+      <% else %>
+       <li><%= link_to "Create Profile",  new_user_profile_path(current_user) %></li>
+      <% end %>
+      <li><%= link_to "Logout", logout_path %></li>
+    <% else %>
+      <li><%= link_to "Register", new_user_path %></li>
+      <li><%= link_to "Login", login_path %></li>  
+    <% end %>
+  </nav>
+
+<%= yield %>
+
+<footer>
+  <p>Built by <%= link_to "CorainChicago", "http://corainchicago.github.io/" %></p>
+</footer>
+
+</body>
+</html>

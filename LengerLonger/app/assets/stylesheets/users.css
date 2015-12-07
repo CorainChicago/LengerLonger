@@ -1,0 +1,17 @@
+.new_user{
+  position: relative;
+  margin: 10% 55% 30% 30%;
+  float: right;
+  clear: both;
+  margin-bottom: 30%;
+}
+
+.new_user label{
+  display: block;
+  margin: 2% 15% 5% 2%;
+}
+.new_user input{
+  line-height: 3.0em;
+  display: block;
+  margin: 14% 5% 10% 2%;
+}

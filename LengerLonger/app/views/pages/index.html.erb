@@ -1,0 +1,36 @@
+<div class="fact_circle">
+  <p><%= @fact %></p>
+</div>
+
+
+<div class="center-box">
+  <% @response = Cartoon.joke %>
+  <p><%= @response["title"] %></p>
+  <img src="<%= @response["img"]%>">
+</div>
+
+
+<div class="quotes">
+  <blockquote id="qod-quote"></blockquote>
+</div>
+
+<div class="weather"> 
+  <p>Today's weather is:  <%= @weather["currently"]["summary"] %></p>
+  <p>Current Temperature: <%= @weather["currently"]["temperature"].to_i  %></p>
+  <p>Precipiation Chance: <%= @weather["daily"]["precipProbability"].to_i %>%   Humidity: <%= @weather["daily"]["Humidity"].to_i %>%</p>
+  <p>Summary: <%= @weather["daily"]["summary"] %></p>
+</div>
+
+<div class="user_profile_info">
+  <% if current_user && user_profile %>
+    <p><%= user_profile.fav_quote %></p>
+    <p><%= user_profile.goal %></p>
+  <% else %> 
+    <p>"Whatever you are, be a good one." -Abraham Lincoln</p>
+    <p>Goal: Make this day yours!</p>
+  <% end %> 
+</div>
+
+</div>
+
+
